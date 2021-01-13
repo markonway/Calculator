@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="calculator">
+        <input type="text" id="input-field">
+        <div>
+            <button class="mode-buttons" onclick="clearValue(this)">C</button>
+            <button class="mode-buttons" onclick="insertValue(this)">%</button>
+            <button class="mode-buttons" onclick="insertValue(this)">/</button>
+            <button class="mode-buttons" onclick="insertValue(this)">*</button>
+        </div>
+        <div>
+            <button class="number-button" onclick="insertValue(this)">7</button>
+            <button class="number-button" onclick="insertValue(this)">8</button>
+            <button class="number-button" onclick="insertValue(this)">9</button>
+            <button class="number-button" onclick="insertValue(this)">-</button>
+        </div>
+        <div>
+            <button class="number-button" onclick="insertValue(this)">4</button>
+            <button class="number-button" onclick="insertValue(this)">5</button>
+            <button class="number-button" onclick="insertValue(this)">6</button>
+            <button class="number-button" onclick="insertValue(this)">+</button>
+        </div>
+        <div>
+            <button class="number-button align-buttons" onclick="insertValue(this)">1</button>
+            <button class="number-button align-buttons" onclick="insertValue(this)">2</button>
+            <button class="number-button align-buttons" onclick="insertValue(this)">3</button>
+            <button id="equals" class="number-button" onclick="result()">=</button>
+        </div>
+        <div>
+            <button id="zero" class="number-button" onclick="insertValue(this)">0</button>
+            <button id="dot" class="number-button" onclick="insertValue(this)">.</button>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
